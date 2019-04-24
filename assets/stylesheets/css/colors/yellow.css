@@ -1,0 +1,289 @@
+/*==========================================*/
+/*           Color Schemes
+/*==========================================*/
+/*==========================================*/
+/*            Global Elements
+/*==========================================*/
+a {
+  color:#2E9AFE;
+}
+a:hover {
+  color: #00afd1;
+}
+.section-title .title-icon-container .title-icon {
+  background: #2E9AFE;
+}
+.pagination-wrap .pagination li a {
+  color: #333333;
+}
+.pagination-wrap .pagination li a.active,
+.pagination-wrap .pagination li a:hover {
+  border-color: #00afd1;
+  background: #00afd1;
+}
+.title h2 {
+  color: #2E9AFE;
+}
+/*==========================================*/
+/*            Navbar Elements
+/*==========================================*/
+.navbar-inverse.scroll-fixed-navbar .navbar-nav li:hover a {
+  color: #00afd1;
+}
+.navbar-inverse.scroll-fixed-navbar .navbar-nav li.active a {
+  color: #00afd1;
+}
+.navbar-inverse.scroll-fixed-navbar .navbar-nav li.active a:hover {
+  color: #00afd1;
+}
+/*==========================================*/
+/*            Banner Elements
+/*==========================================*/
+.banner .banner-content .buttons .def-btn:hover {
+  color: #00afd1;
+  border-bottom: 1px solid #00afd1;
+}
+/*==========================================*/
+/*              About Elements
+/*==========================================*/
+.about .content .icon i {
+  color: #2E9AFE;
+}
+.about .center .slick-prev,
+.about .center .slick-next {
+  border: 1px solid #00afd1;
+}
+.about .center .slick-prev:hover,
+.about .center .slick-next:hover {
+  background: #00afd1;
+}
+.about .center .slick-prev:hover:before,
+.about .center .slick-next:hover:before {
+  color: #00afd1;
+}
+.about .center .slick-prev:before {
+  color: #00afd1;
+}
+.about .center .slick-next:before {
+  color: #00afd1;
+}
+.about .more ul a:hover {
+  color: #00afd1;
+}
+/*==========================================*/
+/*             Testimonial Elements
+/*==========================================*/
+.testimonial .carousel .carousel-control .control-circle:hover {
+  border: 1px solid #2E9AFE;
+}
+.testimonial .carousel .carousel-control .control-circle:hover .fa {
+  color: #2E9AFE;
+}
+/*==========================================*/
+/*             Counter Elements
+/*==========================================*/
+.counter h3 {
+  color: #2E9AFE;
+}
+/*==========================================*/
+/*             Portfolio Elements
+/*==========================================*/
+.portfolio .portfoliofilter a.current .filterbutton {
+  background: #2E9AFE;
+  border: 1px solid #2E9AFE;
+}
+.portfolio .portfoliofilter a:hover .filterbutton {
+  color: #00afd1;
+  border: 1px solid #00afd1;
+}
+.portfolio .portfoliocontent .content .overlay:hover {
+  background: rgba(249, 191, 59, 0.9);
+}
+/*==========================================*/
+/*             Why Me Elements
+/*==========================================*/
+.why-me .skills .skillbars .bar-container .meter {
+  background: #2E9AFE;
+}
+.why-me .skills .skillbars .bar-container .meter:after {
+  border-left: 20px solid #2E9AFE;
+}
+/*==========================================*/
+/*      Education & Employment Elements
+/*==========================================*/
+.timeline > li .timeline-icon {
+  background: #2E9AFE;
+}
+.timeline > li .timeline-label .place {
+  color: #2E9AFE;
+}
+/*==========================================*/
+/*        Pricing Elements
+/*==========================================*/
+.pricing .pricing-table .price {
+  background: #2E9AFE;
+}
+.pricing .pricing-table .list .def-btn {
+  border: 1px solid #2E9AFE;
+  border-color: #2E9AFE;
+  color: #2E9AFE;
+}
+.pricing .pricing-table .list .def-btn:hover {
+  background: #2E9AFE;
+}
+/*==========================================*/
+/*            Journal Elements
+/*==========================================*/
+.journal .journal-content .media .quote {
+  background: #2E9AFE;
+}
+.journal .journal-content .detail {
+  border-top: 5px solid #2E9AFE;
+}
+.journal .journal-content .detail .category {
+  background: #2E9AFE;
+}
+.journal .journal-content .detail .title h3 {
+  color: #2E9AFE;
+}
+.journal .journal-content .detail .title h3:hover {
+  color: #2E9AFE;
+}
+.journal .journal-content .detail .info a:hover {
+  color: #2E9AFE;
+}
+/*==========================================*/
+/*             Map Elements
+/*==========================================*/
+.map .map-title {
+  background: #2E9AFE;
+}
+/*==========================================*/
+/*             Contact Elements
+/*==========================================*/
+.contact #success_page {
+  border: 1px solid #2E9AFE;
+}
+.contact #success_page h3 {
+  color: #2E9AFE;
+}
+.contact .error_message {
+  border: 1px solid #2E9AFE;
+}
+.contact .footer-form .input-container .form-control:focus {
+  border: 1px solid #2E9AFE;
+}
+.contact .footer-form .textarea-container textarea:focus {
+  border: 1px solid #2E9AFE;
+}
+.contact .footer-form .button-container .def-btn {
+  border: 1px solid #2E9AFE;
+  color: #2E9AFE;
+}
+.contact .footer-form .button-container .def-btn:hover {
+  background: #2E9AFE;
+}
+/*==========================================*/
+/*            Footer Elements
+/*==========================================*/
+.footer {
+  border-top: 5px solid #2E9AFE;
+}
+.footer .top-text {
+  background: #2E9AFE;
+}
+.footer .links .social-icons .circle {
+  border: 1px solid #2E9AFE;
+}
+.footer .links .social-icons .circle .fa {
+  color: #2E9AFE;
+}
+.footer .links .social-icons .circle:hover {
+  background: #2E9AFE;
+}
+/*==========================================*/
+/*         Portfolio Single Elements
+/*==========================================*/
+.portfolio-single .carousel .carousel-control .control-button:hover {
+  background: #2E9AFE;
+}
+.portfolio-single .description .def-btn:hover {
+  background: #2E9AFE;
+}
+/*==========================================*/
+/*          Journal List Elements
+/*==========================================*/
+.journal-list .top-search .search-wrap input:focus {
+  border-color: #2E9AFE;
+}
+.journal-list .journal-content .detail {
+  border-top: 5px solid #2E9AFE;
+}
+.journal-list .journal-content .detail .category {
+  background: #2E9AFE;
+}
+.journal-list .journal-content .detail .title h3 {
+  color: #2E9AFE;
+}
+.journal-list .journal-content .detail .title h3:hover {
+  color: #f7af0a;
+}
+.journal-list .journal-content .detail .info a:hover {
+  color: #2E9AFE;
+}
+/*==========================================*/
+/*          Journal Single Elements
+/*==========================================*/
+.journal-detail .post-single .respond .row .form-control:focus {
+  border: 1px solid #2E9AFE;
+}
+.journal-detail .post-single .respond .row textarea:focus {
+  border: 1px solid #2E9AFE;
+}
+.journal-detail .post-single .respond .row .def-btn:hover {
+  background: #2E9AFE;
+}
+.journal-sidebar .title .shape {
+  background: #2E9AFE;
+}
+.journal-sidebar .content ul li:hover {
+  border-bottom: 1px solid #2E9AFE;
+}
+.journal-sidebar .content ul li:hover a {
+  color: #2E9AFE;
+}
+.journal-sidebar .search-post .content .search-wrap input:focus {
+  border-color: #2E9AFE;
+}
+.journal-sidebar .recent-post .content ul li span {
+  color: #2E9AFE;
+}
+.journal-sidebar .post-tags .tag-label:hover {
+  background: #2E9AFE;
+  border: 2px solid #2E9AFE;
+}
+/*==========================================*/
+/*          Responsive Settings
+/*==========================================*/
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-toggle {
+    border: 1px solid #2E9AFE;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+  .navbar-inverse .navbar-toggle span.icon-bar {
+    background: #2E9AFE;
+  }
+  .navbar-inverse .navbar-toggle:focus,
+  .navbar-inverse .navbar-toggle:hover {
+    background: #2E9AFE;
+  }
+  .navbar-inverse .navbar-collapse ul.navbar-nav li.active {
+    color: #2E9AFE;
+  }
+  .navbar-inverse .navbar-collapse ul.navbar-nav li a:hover {
+    background: #2E9AFE;
+  }
+}

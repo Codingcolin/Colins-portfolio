@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Code Challenge</title>
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+		h6 {
+			text-align: center;
+			text-decoration: underline;
+		}
+		h6 span {
+			text-align: center;
+			margin-left: 15px;
+		}
+		h6 span:hover {
+			cursor: pointer;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="banner" style="background-image: url(./images/herobanner.jpg); height: 437px; width: 1140px;">
+	<div class="slideshow-nav">
+		<a class="prev nav-left">
+			<span class="hide-text"></span>
+		</a>
+		<a class="prev nav-right">
+			<span class="hide-text"></span>
+		</a>
+	</div>	
+	<div style="line-height: 2px">
+		<div id="p">
+			<p style="text-align: center">we create</font></p>
+		</div>
+		<div>
+			<h1 style="text-align: center">beautiful smiles</h1>
+		</div>
+		<div>
+			<h4 style="text-align: center; font-weight: bold;">
+				<span id="open-text"></span>
+				<span  id="hours-text" style="margin-left: 30px;"></span>
+			</h4>
+		</div>
+		<div>
+			<h6>
+				<span onclick="handleDayClick(1)">MON</span>
+				<span onclick="handleDayClick(2)">TUES</span>
+				<span onclick="handleDayClick(3)">WED</span>
+				<span onclick="handleDayClick(4)">THURS</span>
+				<span onclick="handleDayClick(5)">FRI</span>
+				<span onclick="handleDayClick(6)">SAT</span>
+				<span onclick="handleDayClick(0)">SUN</span>
+			</h6>
+		</div>
+		<div>
+			<h5 style="text-align: center;">CALL US NOW</h5>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script>
+		var d = new Date()
+		handleDayClick( d.getDay() )
+	</script>
+</body>
+</html>

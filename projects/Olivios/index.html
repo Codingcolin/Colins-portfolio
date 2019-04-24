@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Olivios</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+        <!-- Owl Carousel -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+        <!-- bootstrap.min css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Font-awesome.min css -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/animate.min.css">
+
+		<link rel="stylesheet" href="css/main.css">
+        <!-- Responsive Stylesheet -->
+		<link rel="stylesheet" href="css/responsive.css">
+		<!-- Js -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+	</head>
+	<body>
+
+     <div id="mainCarousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <script
+            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC4rVBbTu--ivvL4FA_KlTkPbyCE4HJsds">
+            </script>
+            <script>
+            var myCenter=new google.maps.LatLng(37.7872446, -122.4185051);
+            var marker;
+            function initialize()
+            {
+            var mapProp = {
+              center:myCenter,
+              zoom:15,
+              mapTypeId:google.maps.MapTypeId.ROADMAP
+              };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            marker=new google.maps.Marker({
+              position:myCenter,
+             // icon:'themes/assets/images/nepali-momo.png',
+              animation:google.maps.Animation.SET
+              });
+
+            marker.setMap(map);
+
+            // Info open
+            var infowindow = new google.maps.InfoWindow({
+              content:"Come Grab A Bite Today!"
+              });
+
+            google.maps.event.addListener(marker, 'mouseover', function() {
+              infowindow.open(map,marker);
+              });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+            <div id="googleMap" style="height:450px;"></div>
+              <div class="container">
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.carousel -->
+	
+	<nav id="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <nav class="navbar navbar-default">
+                          <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                                   <a class="navbar-brand"></a>
+                                  </a>
+
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                              <ul class="nav navbar-nav navbar-right" id="top-nav">
+                                <li><a href="#about-us">about us</a></li>
+                                <li><a href="#price">menu</a></li>
+                                <li><a href="#contact-us">contacts</a></li>
+                              </ul>
+                            </div><!-- /.navbar-collapse -->
+                          </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .container close -->
+	</nav><!-- header close -->
+    <!--
+    Slider start
+    ============================== -->
+    <section id="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <div class="title">
+                            <h3>Welcome To  <span>Olivios</span> Eatery!</h3>
+                        </div>
+                        <div id="owl-example" class="owl-carousel">
+                            <div>
+                                <img class="img-responsive" src="images/slider/food1.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="img-responsive" src="images/slider/food2.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="img-responsive" src="images/slider/food3.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="img-responsive" src="images/slider/soup.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="img-responsive" src="images/slider/food4.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="img-responsive" src="images/slider/food5.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="img-responsive" src="images/slider/food6.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="img-responsive" src="images/slider/food7.jpg" alt="">
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .container close -->
+    </section><!-- slider close -->
+    <!--
+    about-us start
+    ============================== -->
+    <section id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" >
+                        <h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms" >Welcome to <span>Olivios</span> casual </br> <span>Mexican & Salvadoran</span> Eatery
+                        </h1>
+                        <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </br>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .containe close -->
+    </section><!-- #call-to-action close -->
+    <!--
+    blog start
+    ============================ -->
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                    
+                           
+                             
+                            </li>
+                           
+                            </li>
+                            <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="800ms">
+                                <div class="blog-img">
+                                    <img src="" >
+                                </div>
+                    
+                    
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .containe close -->
+    </section><!-- #blog close -->
+    <!--
+    price start
+    ============================ -->
+    <section id="price">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h1 class="heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">our <span>MENU</span></h1>
+                        <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                        <div class="pricing-list">
+                            <div class="title">
+                               
+                            </div>
+                            <ul>
+                                <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                                     <h1>Appetizers<h3>(Choice of meat: Steak, chicken, roast pork, chile verde pork in green sauce. Choice of beans: Refried beans, pinto beans, black beans.)</h3></h1>
+
+                                    <table border="0px">
+                                    <tr align="left">
+                                        <td width="600px">
+                                        <h2>Nachos</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 6.99</span>
+                                        </div>
+                                        <p>W/choice of beans, choice of meat, sour cream, guacamole, melted cheese, fresh salsa & jalapenos</p>
+                                    </div>
+
+                                        
+                                        </td>
+                                         <td width="600px">
+                                           <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                            <h2>Shrimp Cocktail</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 7.99</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table> 
+                                 <table border="0px">
+                                    <tr align="left">
+                                        <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                             
+                                    <div class="item">
+                                        <div class="item-title">
+                                            <h2>Shrimp Quesadilla</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 8.50</span>
+                                        </div>
+                                        <p>W/avocado & sour cream</p>
+                                    </div>
+                                </li>
+                                      
+                                        </td>
+                                         <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                            <h2>Guacamole & Chips</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 4.99</span>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                               </li>
+                                        </td>  
+                                </table> 
+                                  <table border="0px">
+                                    <tr align="left">
+                                        <td width="600px">
+                                       <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="700ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                            <h2>Quesadilla Suiza</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 6.99</span>
+                                        </div>
+                                        <p>W/ choice of meat, avocado and sour cream</p>
+                                    </div>
+                                </li>
+                                        </td>
+                                         <td width="600px">
+                                          <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="800ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                            <h2>Carne Asada Fries</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 7.50</span>
+                                        </div>
+
+
+                                        </td>  
+                                </table>                   
+                               
+                               
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                                        
+                                            <h1>Soups</h1>
+                                             
+                                <table border="0px">
+                                             <tr align="left">
+                                        <td width="600px">
+                                        <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                            <h2>Beef</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 9.99</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                       
+                                        </td>
+                                         <td width="600px">
+                                          <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                            <h2>Shrimp</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 11.50</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table>    
+                                <table border="0px">
+                                             <tr align="left">
+                                        <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                            <h2>Chicken</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 9.99</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                       
+                                        </td>
+                                         <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                            <h2>Seafood</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 12.99</span>
+                                        </div>
+                                        <p>W/shrimp, calamari & sole filet</p>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table>          
+                                            
+                                               
+                                  
+                                  
+                                   
+                                       <h1>Tacos<h3>(Choice of meat: Steak, chicken, roast pork, chile verde pork in green sauce. Choice of beans: Refried beans, pinto beans, black beans.)</h3></h1>
+
+                                         <table border="0px">
+                                    <tr align="left">
+                                        <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Two soft shell</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 5.50</span>
+                                        </div>
+                                        <p>W/choice of meat, fresh salsa and hot salsa</p>
+                                    </div>
+                                </li>
+
+                                        </td>
+                                         <td width="600px">
+                                          <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Two Shrimp Tacos</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 6.50</span>
+                                        </div>
+                                        <p>Choice of: hard shell or soft shell</p>
+                                    </div>
+                                </li>
+                                        </td>  
+                                         </table>
+                                           <table border="0px">
+                                    <tr align="left">
+                                        <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Two Hard Shell</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 5.50</span>
+                                        </div>
+                                        <p>W/choice of meat, guacamole & sour cream</p>
+                                    </div>
+                                </li>
+                                        </td>
+                                         <td width="600px">
+                                          <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Two Fish Tacos</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 6.50</span>
+                                        </div>
+                                        <p>Choice of: hard shell or soft shell</p>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table>    
+
+                                              
+                                          
+                                          
+                                          
+                                     <h1>Burritos<h3>Choice of meat: Pollo asado(grilled chicken), carne asada(steak),chile verde(pork in green sauce), carnitas(roasted pork). Choice of beans: Refried beans, pinto beans, black beans. Extra meat $2.50</h3></h1>
+                                 
+                                  
+                                <table border="0px">
+                                    <tr align="left">
+                                        <td width="600px">
+                                        <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Regular</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 6.50</span>
+                                        </div>
+                                        <p>Choice of meat, choice of beans, rice, fresh salsa & hot salsa</p>
+                                    </div>
+                                </li>
+                                        </td>
+                                         <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Super</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 7.50</span>
+                                        </div>
+                                        <p>Choice of beans, rice, cheese, sour cream, guacamole, fresh salsa & hot salsa</p>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table>
+                                 <table border="0px">
+                                    <tr align="left">
+                                        <td width="600px">
+                                        <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Vegetarian</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 5.50</span>
+                                        </div>
+                                        <p>Choice of beans, rice, cheese, sour cream, guacamole, fresh salsa & hot salsa</p>
+                                    </div>
+                                </li>
+                                     </td>
+                                            <td width="600px">
+                                            <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Shrimp</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 8.95</span>
+                                    </div>
+                                        <p>Choice of beans, rice, cheese, sour cream, guacamole, fresh salsa & hot salsa</p>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table>
+                                 <table border="0px">
+                                    <tr align="left">
+                                        <td width="600px">
+                                        <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Fish</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 8.50</span>
+                                        </div>
+                                        <p>Choice of beans, rice, cheese, sour cream, guacamole fresh salsa & hot salsa</p>
+                                    </div>
+                                </li>
+                                        </td>
+                                         <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>California</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 6.50</span>
+                                        </div>
+                                        <p>French fries, choice of meat, cheese, sour cream, guacamole & hot salsa</p>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table> 
+
+                                 <h1>Combinations<h3>French fries, choice of meat, cheese, sour cream, guacamole & hot salsa</h3></h1>
+
+                                        <table border="0px">
+                                        <tr align="left">
+                                         <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Chile Relleno</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 7.50-$10.50</span>
+                                        </div>
+                                        <p>Green pepper stuffed w/cheese</p>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table> 
+                                       <table border="0px">
+                                         <tr align="left">
+                                         <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Queadilla</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 7.50-$10.50</span>
+                                        </div>
+                                        <p>Cheese & choice of chicken, beef or pork</p>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table> 
+                                       <table border="0px">
+                                        <tr align="left">
+                                         <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Tostada</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 7.50-10.50</span>
+                                        </div>
+                                        <p>W/ meat, beans, lettuce, sour cream, gucamole & cheese</p>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table> 
+                                    <table border="0px">
+                                        <tr align="left">
+                                        <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Taco</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 7.50-10.50</span>
+                                        </div>
+                                        <p>Hard shell or soft shell(chicken, beef or pork)</p>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table>
+                                    <table border="0px">
+                                        <tr align="left">
+                                        <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Burrito</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 7.50-10.50</span>
+                                        </div>
+                                        <p>W/ meat,cheese & fresh salsa chicken, beef or pork</p>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table>
+                                    <table border="0px">
+                                        <tr align="left"> 
+                                        <td width="600px">
+                                         <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                    <div class="item">
+                                        <div class="item-title">
+                                                <h2>Enchilada</h2>
+                                            <div class="border-bottom"></div>
+                                            <span>$ 7.50-10.50</span>
+                                        </div>
+                                        <p>Chicken, beef, pork or cheese</p>
+                                    </div>
+                                </li>
+                                        </td>  
+                                </table> 
+                                                     
+                                                     
+                                                     
+                                                     
+
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .containe close -->
+    </section><!-- #price close -->
+    <!--
+    subscribe start
+    ============================ -->
+    <section id="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                      
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .containe close -->
+    </section><!-- #subscribe close -->
+    <!--
+    CONTACT US  start
+    ============================= -->
+    <section id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h1 class="heading wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms"><span>CONTACT US</span></h1>
+                     
+                        <form>
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Write your full name here...">
+                            </div>
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="800ms">
+                                <input type="text" class="form-control" placeholder="Write your email address here...">
+                            </div>
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1000ms">
+                                <textarea class="form-control" rows="3" placeholder="Write your message here..."></textarea>
+                            </div>
+                        </form>
+                        <a class="btn btn-default wow bounceIn" data-wow-duration="500ms" data-wow-delay="1300ms" href="#" role="button">send your message</a>
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .container close -->
+    </section><!-- #contact-us close -->
+    <!--
+    footer  start
+    ============================= -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="block wow fadeInLeft"  data-wow-delay="200ms">
+                        <h3>CONTACT <span>INFO</span></h3>
+                        <div class="info">
+                            <ul>
+                                <li>
+                                  <h4><i class="fa fa-phone"></i>Telephone</h4>
+                                  <p>(415) 931-3019</p>
+                                    
+                                </li>
+                                <li>
+                                  <h4><i class="fa fa-map-marker"></i>Address</h4>
+                                  <p>1017 Larkin St. San Francisco, CA</p>
+                                </li>
+                                <li>
+                                  <h4><i class="fa fa-envelope"></i>E mail</h4>
+                                  <p>rest@gmail.com - rest@mail.ru</p>
+                                  
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- .col-md-4 close -->
+                <div class="col-md-4">
+                    <div class="block wow fadeInLeft"  data-wow-delay="700ms">
+                        <h3>LATEST <span>BLOG POSTS</span></h3>
+                        <div class="blog">
+                            <ul>
+                                <li>
+                                    <h4><a href="#">Feb 9-2016</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
+                                </li>
+                                <li>
+                                    <h4><a href="#">Jan 8-2016</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
+                                </li>
+                            </ul>                
+                        </div>
+                    </div>
+                </div>
+                <!-- .col-md-4 close -->
+                <div class="col-md-4">
+                    <div class="block wow fadeInLeft"  data-wow-delay="1100ms">
+                        <div class="gallary">
+                  
+                        </div>
+                        <div class="social-media-link">
+                            <h3>Follow <span>US</span></h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-dribbble"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-behance"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- .col-md-4 close -->
+            </div><!-- .row close -->
+        </div><!-- .containe close -->
+    </section><!-- #footer close -->
+    <!--
+    footer-bottom  start
+    ============================= -->
+    <footer id="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="block">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	</body>
+</html>
